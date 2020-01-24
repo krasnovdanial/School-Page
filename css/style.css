@@ -1,5 +1,5 @@
-/* General setup */
 
+/* General setup */
 * {
   box-sizing: border-box;
 }
@@ -8,12 +8,10 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
-  font-size: 15px;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Lobster', cursive;
 }
 
 /* Layout */
-
 section {
   float: left;
   width: 50%;
@@ -39,81 +37,101 @@ header, section, aside, nav, footer {
 }
 
 /* header and footer */
-
 header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.9rem;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
+
+section h2+p {
+  text-indent: 2rem;
+}
+
 h1 {
   text-align: center;
-  font-family: 'Ibarra Real Nova', serif;
   line-height: 35px;
   font-size: 35px;
   letter-spacing: 2px;
   word-spacing: 8px;
 }
+
 h2 {
-  font-family: 'Ibarra Real Nova', serif;
   letter-spacing: 2px;
 }
 
 .section {
-  margin: 0 50px 0 50px;
+  margin: 0 10px 0 10px;
 }
+
 a {
   outline: 0;
 }
- a:link {
+
+a:link,
+a:visited {
   color: #a66;
 }
 
-a:visited{
-  color: #a66;
-}
-
- a:focus{
-  color: #a66;
+a:hover {
+  color: #047004;
   text-decoration: none;
+  border-color: : #047004;
 }
 
- a:hover {
-  color: #a66;
-  text-decoration: none;
-}
-
- a:active {
+a:active {
   color: #E1402B;
 }
+
 .info a {
   background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 0;
   background-size: 16px 16px;
   padding-right: 19px;
 }
+
 .list li {
   list-style-type: square;
   width: auto;
   position: relative;
   right: 30px;
   padding: 3px;
+  margin-right: 39px;
+}
 
+nav ul {
+  list-style: none;
+  padding: 0;
 }
-.nav li {
-  display: block;
-  width: 80px;
-  position: relative;
-  left: 250px;
-  bottom: 400px;
-  line-height: 2;
-  font-size: 25px;
-  margin: 10px;
-}
-.nav li a{
-  border: 2px solid #a66;
+
+nav li {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #AB4444;
   text-decoration: none;
-  padding: 10px;
+  font-size: 2rem;
+  position: relative;
+  left: 380px;
+  bottom: 460px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #047004;
+  border: 1px solid #047004;
 }
 
 ul {
